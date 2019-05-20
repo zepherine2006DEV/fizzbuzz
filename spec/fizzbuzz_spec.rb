@@ -25,8 +25,12 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(2)).to eq'2'
   end
   
-    it 'returns "fizzbuzz" when number is divisible by 3 and 5' do
+  it 'returns "fizzbuzz" when number is divisible by 3 and 5' do
     expect(fizzbuzz(30)).to eq'fizzbuzz'
+  end
+  
+  it 'returns "error!" when passed "one" as an argument' do
+    expect(fizzbuzz("one")).to eq'error!'
   end
 
 end
