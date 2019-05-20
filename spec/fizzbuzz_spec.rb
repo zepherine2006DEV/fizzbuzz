@@ -21,4 +21,8 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(10)).to eq'buzz'
   end
 
+  it 'returns the given number when not divisible by 3 or 5' do
+    expect(fizzbuzz(2)).to eq'2'
+  end
+
 end
