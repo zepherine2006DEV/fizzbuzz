@@ -33,4 +33,8 @@ describe 'fizzbuzz' do
     expect(fizzbuzz("one")).to eq'error!'
   end
 
+  it 'returns "error!" when passed a string as an argument' do
+    expect(fizzbuzz("string")).to eq'error!'
+  end
+
 end
