@@ -1,4 +1,4 @@
-require "./fizzbuzz.rb"
+require "fizzbuzz.rb"
 
 describe 'fizzbuzz' do
   it 'returns "fizz" when passed 3' do
