@@ -3,6 +3,9 @@ def fizzbuzz(num)
     "fizzbuzz"
   elsif num % 3 == 0
     "fizz"
-  else "buzz"
+  elsif num % 5 == 0
+    "buzz"
+  else
+    num.to_s
   end
 end
