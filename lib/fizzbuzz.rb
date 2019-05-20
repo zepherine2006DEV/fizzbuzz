@@ -1,5 +1,5 @@
 def fizzbuzz(num)
-  if num == "one"
+  if num.is_a? String
     "error!"
   elsif num % 3 == 0 && num % 5 == 0
     "fizzbuzz"
