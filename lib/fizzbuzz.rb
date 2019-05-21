@@ -1,15 +1,10 @@
+FIZZNUM = 3
+BUZZNUM = 5
+
 def fizzbuzz(num)
   num.is_a?(String) ? "error!" : calc_fizzbuzz(num)
 end
 
 def calc_fizzbuzz(num)
-  if num % 3 == 0 && num % 5 == 0
-    "fizzbuzz"
-  elsif num % 3 == 0
-    "fizz"
-  elsif num % 5 == 0
-    "buzz"
-  else
-    num.to_s
-  end
+  !(num % FIZZNUM == 0 || num % BUZZNUM == 0) ? num.to_s : (num % FIZZNUM == 0 ? "fizz" : "buzz")
 end
